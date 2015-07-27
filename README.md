@@ -19,7 +19,7 @@ http://docs.robovm.com/configuration.html
 
 ## Build a Docker image from the current directory
 
-This builds a working Docker image from the current directory based on `FROM sillelien/jess:master` - so they are pretty small.
+This builds a working Docker image from the current directory based on  [sillelien/jess:master](https://registry.hub.docker.com/u/sillelien/jess/) - so they are pretty small.
 
 ```
    docker run -ti -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/build sillelien/cyborg-wrapper image-tag executable-name 
