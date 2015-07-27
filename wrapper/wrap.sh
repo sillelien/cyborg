@@ -1,15 +1,17 @@
 #!/usr/bin/env sh
+cp -rf /build /build_for_real
+cd /build_for_real
 set -ex
 tag=$1
 shift
-executable=$2
+executable=$1
 shift
-/usr/local/robovm/bin/robovm -d /build -o $2 $@
-cat > /tmp/Dockerfile <<EOF
-FROM scratch
-COPY . /usr/local/$2
-COPY $2 /bin/$2
-WORKDIR /usr/local/$2
-ENTRYPOINT ["/bin/$2"]
+/usr/local/robovm/bin/robovm -d . -config robovm.xml $@ -o $executable
+cat > Dockerfile <<EOF
+FROM debian-wheezy
+COPY . /usr/local/$executable
+RUN chmod 755 /usr/local/$executable/$executable
+WORKDIR /usr/local/$executable
+ENTRYPOINT ["/usr/local/$executable/$executable"]
 EOF
-docker build -f /tmp/Dockerfile -t $tag /build
+docker build -t $tag .
