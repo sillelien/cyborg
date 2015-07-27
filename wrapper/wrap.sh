@@ -8,7 +8,7 @@ executable=$1
 shift
 /usr/local/robovm/bin/robovm -d . -config robovm.xml $@ -o $executable
 cat > Dockerfile <<EOF
-FROM debian:wheezy
+FROM debian:jessie
 COPY . /usr/local/$executable
 RUN chmod 755 /usr/local/$executable/$executable
 WORKDIR /usr/local/$executable
