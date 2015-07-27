@@ -5,4 +5,5 @@ RUN tar xvfz robovm-1.4.0.tar.gz && mv robovm-1.4.0 /usr/local/robovm
 VOLUME /build
 WORKDIR /build
 COPY wrap.sh /wrap.sh
+RUN chmod 755 /wrap.sh
 ENTRYPOINT ["/wrap.sh"]
