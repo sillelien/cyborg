@@ -15,7 +15,7 @@ http://docs.robovm.com/advanced-topics/commandline.html
 
 ## Build a Docker image from the current directory
 
-This builds a working Docker image from the current directory based on `FROM scratch` - so they are small.
+This builds a working Docker image from the current directory based on `FROM debian:jessie` - so they are smallish - I hope to reduce it to a `FROM scratch` style image in time.
 
 ```
    docker run -ti -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/build sillelien/cyborg-wrapper image-tag executable-name 
