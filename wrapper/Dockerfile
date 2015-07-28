@@ -1,4 +1,4 @@
-FROM sillelien:base-robovm
+FROM sillelien/base-robovm
 VOLUME /build
 WORKDIR /build
 COPY wrap.sh /wrap.sh
