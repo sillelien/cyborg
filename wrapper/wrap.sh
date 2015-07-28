@@ -6,9 +6,16 @@ tag=$1
 shift
 executable=$1
 shift
+
 /usr/local/robovm/bin/robovm -d . -config robovm.xml $@ -o $executable
+
+if [ -z "$BASE_IMAGE" ]
+then
+    BASE_IMAGE="sillelien/jess:master"
+fi
+
 cat > Dockerfile <<EOF
-FROM sillelien/jess:master
+FROM $BASE_IMAGE
 COPY $executable /usr/local/$executable/$executable
 COPY lib/ /usr/local/$executable/lib/
 WORKDIR /usr/local/$executable
