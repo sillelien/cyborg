@@ -15,6 +15,6 @@ then
     #docker run -ti sillelien/cyborg-helloworld:${CIRCLE_BRANCH}
     #docker push sillelien/cyborg-helloworld:${CIRCLE_BRANCH}
 else
-    docker run -ti -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd)/:/build/ wrapper sillelien/cyborg-helloworld:${CIRCLE_BRANCH} hello-world
+    docker run -ti -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd)/:/build/ wrapper cyborg-helloworld hello-world
 fi
 
