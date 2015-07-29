@@ -9,7 +9,9 @@ mvn clean install
 #Silly CircleCI bug - see https://github.com/ClusterHQ/powerstrip/issues/71
 if [ -n "$CIRCLECI" ]
 then
-    sudo docker run -ti --privileged -v /run/docker.sock:/var/run/docker.sock -v $(pwd)/:/build/ wrapper sillelien/cyborg-helloworld:${CIRCLE_BRANCH} hello-world
+    #    disabled at the moment
+    #sudo docker run -ti --privileged -v /run/docker.sock:/var/run/docker.sock -v $(pwd)/:/build/ wrapper sillelien/cyborg-helloworld:${CIRCLE_BRANCH} hello-world
+    echo "Skipping CircleCI"
 else
     docker run -ti -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd)/:/build/ wrapper sillelien/cyborg-helloworld:${CIRCLE_BRANCH} hello-world
 fi
