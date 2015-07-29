@@ -14,7 +14,7 @@ http://docs.robovm.com/configuration.html
 ## Build an executable in the current directory
 
 ```
-   docker run -ti -v $(pwd):/build sillelien/cyborg-builder  
+   docker run -ti -v $(pwd):/build sillelien/cyborg-builder:0.1  
 ```
 
 ## Build a Docker image from the current directory
@@ -22,5 +22,5 @@ http://docs.robovm.com/configuration.html
 This builds a working Docker image from the current directory based on  [sillelien/jess:master](https://registry.hub.docker.com/u/sillelien/jess/) - so they are pretty small.
 
 ```
-   docker run -ti -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/build sillelien/cyborg-wrapper image-tag executable-name 
+   docker run -ti -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/build sillelien/cyborg-wrapper:0.1 image-tag executable-name 
 ```
