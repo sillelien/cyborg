@@ -11,7 +11,6 @@ dependencies:
       - cd builder && docker build -t sillelien/cyborg-builder:${CIRCLE_BRANCH} .
       - cd wrapper && docker build -t sillelien/cyborg-wrapper:${CIRCLE_BRANCH} .
 
-
 test:
   override:
     - ./test.sh
