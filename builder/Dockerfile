@@ -1,4 +1,4 @@
 FROM sillelien/base-robovm
-VOLUME /build
-WORKDIR /build
-ENTRYPOINT ["/usr/local/robovm/bin/robovm","-d","/build","-config","/build/robovm.xml"]
+COPY builder.sh /builder.sh
+RUN chmod 755 /builder.sh
+ENTRYPOINT ["/builder.sh"]
