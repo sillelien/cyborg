@@ -1,6 +1,8 @@
 machine:
+
   java:
     - oraclejdk8
+
   services:
     - docker
 
