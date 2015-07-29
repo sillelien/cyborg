@@ -6,7 +6,7 @@ cd wrapper
 docker build -t wrapper .
 cd ../helloworld
 mvn clean install
-if [ -n "$CIRCLE_CI" ]
+if [ -n "$CIRCLECI" ]
 then
 docker run -ti -v /run/docker.sock:/var/run/docker.sock -v $(pwd)/:/build/ wrapper hello-docker hello-world
 else
