@@ -21,7 +21,7 @@ FROM $BASE_IMAGE
 COPY $executable /usr/local/$executable/$executable
 COPY lib/ /usr/local/$executable/lib/
 WORKDIR /usr/local/$executable
-ENTRYPOINT ["/usr/local/$executable/$executable"]
+CMD ["/usr/local/$executable/$executable"]
 EOF
 
 echo "Building Docker Image $tag" >&2

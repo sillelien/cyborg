@@ -33,6 +33,9 @@ This builds a working Docker image from the current directory based on  [silleli
 
 [![Image Layers](https://badge.imagelayers.io/sillelien/cyborg-wrapper.svg)](https://imagelayers.io/?images=sillelien/cyborg-wrapper:master 'Get your own badge on imagelayers.io') 
 
+
+## Badges
+
 [![Circle CI](https://circleci.com/gh/Sillelien/cyborg/tree/master.svg?style=svg)](https://circleci.com/gh/Sillelien/cyborg/tree/master)
 
 [![GitHub License](https://img.shields.io/github/license/sillelien/cyborg.svg)](https://raw.githubusercontent.com/sillelien/cyborg/master/LICENSE)
