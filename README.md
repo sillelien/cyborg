@@ -1,5 +1,7 @@
 # Cyborg
 
+[![Join the chat at https://gitter.im/sillelien/cyborg](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sillelien/cyborg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Cyborg uses RoboVM to compile a Java project into a binary executable and then optionally wraps it into a suitable minimal Docker container.
 
 You must create a [robovm.xml](http://docs.robovm.com/configuration.html) and run the commands in that directory.
