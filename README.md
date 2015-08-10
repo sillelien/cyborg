@@ -4,6 +4,8 @@ Cyborg uses RoboVM to compile a Java project into a binary executable and then o
 
 You must create a [robovm.xml](http://docs.robovm.com/configuration.html) and run the commands in that directory.
 
+${BLURB}
+
 ## Dockerizing Java using RoboVM
 
 This will by default produce an Ubuntu binary, but you can configure all that in [robovm.xml](http://docs.robovm.com/configuration.html)
@@ -41,3 +43,5 @@ This builds a working Docker image from the current directory based on  [silleli
 [![GitHub License](https://img.shields.io/github/license/sillelien/cyborg.svg)](https://raw.githubusercontent.com/sillelien/cyborg/master/LICENSE)
 
 [![GitHub Issues](https://img.shields.io/github/issues/sillelien/cyborg.svg)](https://github.com/sillelien/cyborg/issues)
+
+${FOOTER}
