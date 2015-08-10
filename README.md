@@ -40,6 +40,6 @@ This builds a working Docker image from the current directory based on  [silleli
 
 [![Circle CI](https://circleci.com/gh/sillelien/cyborg/tree/master.svg?style=svg)](https://circleci.com/gh/sillelien/cyborg/tree/master)
 
-[![GitHub License](https://img.shields.io/github/license/sillelien/cyborg.svg)](https://raw.githubusercontent.com/sillelien/cyborg/master/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/sillelien/cyborg.svg)](https://raw.githubusercontent.com/sillelien/cyborg/blob/master/LICENSE)
 
 [![GitHub Issues](https://img.shields.io/github/issues/sillelien/cyborg.svg)](https://github.com/sillelien/cyborg/issues)
