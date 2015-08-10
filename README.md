@@ -38,7 +38,7 @@ This builds a working Docker image from the current directory based on  [silleli
 
 ## Badges
 
-[![Circle CI](https://circleci.com/gh/Sillelien/cyborg/tree/master.svg?style=svg)](https://circleci.com/gh/Sillelien/cyborg/tree/master)
+[![Circle CI](https://circleci.com/gh/Sillelien/cyborg/tree/master.svg?style=svg)](https://circleci.com/gh/sillelien/cyborg/tree/master)
 
 [![GitHub License](https://img.shields.io/github/license/sillelien/cyborg.svg)](https://raw.githubusercontent.com/sillelien/cyborg/master/LICENSE)
 
